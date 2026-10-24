@@ -1,0 +1,11 @@
+[out:json][timeout:240];
+(
+  node["highway"~"^(traffic_signals|crossing|bus_stop|street_lamp)$"](25.012,121.492,25.085,121.582);
+  node["natural"="tree"](25.012,121.492,25.085,121.582);
+  node["shop"](25.012,121.492,25.085,121.582);
+  node["amenity"~"^(place_of_worship|restaurant|cafe|fast_food|pharmacy|bank|clinic|dentist|hospital|school|police|fire_station|fuel|karaoke_box|bar|pub|post_office)$"](25.012,121.492,25.085,121.582);
+  node["tourism"](25.012,121.492,25.085,121.582);
+  node["railway"~"^(station|subway_entrance)$"](25.012,121.492,25.085,121.582);
+  node["place"](25.012,121.492,25.085,121.582);
+);
+out;

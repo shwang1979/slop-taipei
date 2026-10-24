@@ -1,0 +1,12 @@
+{
+  "name": "slop-taipei-tools",
+  "private": true,
+  "description": "Builds js/taipei-geodata.js from OpenStreetMap extracts of central Taipei",
+  "scripts": {
+    "fetch": "bash fetch-osm.sh",
+    "build": "node --max-old-space-size=8192 build-geodata.mjs"
+  },
+  "devDependencies": {
+    "clipper-lib": "^6.4.2"
+  }
+}
